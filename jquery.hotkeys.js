@@ -72,7 +72,7 @@
 				character = String.fromCharCode( event.which ).toLowerCase(),
 				modif = "", possible = {};
 
-      jQuery.each([ "alt", "ctrl", "meta", "shift" ], function(index, specialKey) {
+      jQuery.each([ "alt", "ctrl",  "shift" ], function(index, specialKey) {
         if (event[specialKey + 'Key'] && special !== specialKey) {
           modif += specialKey + '+';
         }
